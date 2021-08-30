@@ -142,12 +142,12 @@ function App() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col">
-                            <h1 class="display-2">Nossa História</h1>
+                            <h1 className="display-2">Nossa História</h1>
                             <Info>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nulla sem, ut tincidunt ante euismod sit amet. Etiam at ipsum vel arcu varius pulvinar non eget magna. Donec blandit, justo a tristique interdum, sapien dui venenatis mi, sed varius est sapien sit amet justo. Vestibulum lobortis eros dui, ac sagittis dolor pellentesque et. Cras bibendum fringilla diam, quis vulputate risus hendrerit vitae. Nam imperdiet erat at ex vestibulum ornare. Etiam pulvinar urna lorem, eu suscipit quam venenatis in. Pellentesque sit amet ullamcorper nunc. Aliquam in imperdiet sapien. Mauris laoreet congue est, pretium rhoncus ligula convallis ut. Aenean massa mauris, sollicitudin id pellentesque ac, interdum quis turpis. Cras eu pharetra diam, eget facilisis nibh. Pellentesque a viverra nisi. Cras vitae neque sed enim ultrices varius. In vitae imperdiet nunc. Vestibulum malesuada mi est, quis finibus mauris dictum nec. </Info>
                         </div>
                         <div className="col-5">
-                            <Image src="/images/About.jpg" width="5797" height="3865" />
+                            <Image src="/images/About.jpg" width="5797" height="3865" alt="Sobre nós imagem" />
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ function App() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-5">
-                        <Image src="/images/Logo_black.png" width="105" height="105" />
+                        <Image src="/images/Logo_black.png" width="105" height="105" alt="Logo" />
                     </div>
                     <div className="col-2">
                         <p className="text-muted mt-2 mb-0">Telefone:</p>
