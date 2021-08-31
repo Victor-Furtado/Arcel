@@ -32,11 +32,11 @@ const justifyContent = ['center', 'flex-start', 'flex-end', 'space-around', 'spa
 const alignItems = ['center', 'flex-start', 'flex-end', 'stretch', 'baseline'];
 
 const Button = styled.button`
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     background-color: #76d6c0;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -89,7 +89,7 @@ function App() {
                     </div>
                     <div className="col-2">
                         <p className="text-muted mt-2 mb-0">Telefone:</p>
-                        <p>(99) 9 9999-9999</p>
+                        <p>(85) 9 9691-6621</p>
                     </div>
                     <div className="col-2">
                         <p className="text-muted mt-2 mb-0">Email:</p>
@@ -159,7 +159,7 @@ function App() {
                     </div>
                     <div className="col-2">
                         <p className="text-muted mt-2 mb-0">Telefone:</p>
-                        <p>(99) 9 9999-9999</p>
+                        <p>(85) 9 9691-6621</p>
                     </div>
                     <div className="col-2">
                         <p className="text-muted mt-2 mb-0">Email:</p>
