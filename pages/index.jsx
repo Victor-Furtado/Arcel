@@ -2,8 +2,6 @@ import { Fragment } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const Img1 = "/images/Img1.jpg"
-
 const Logo = styled(Image).attrs({
     src: "/images/Logo.png",
     //layout: "",
@@ -28,8 +26,9 @@ const Col = styled.div`
     flex: ${props => (props.size || 1)}
 `
 
-const justifyContent = ['center', 'flex-start', 'flex-end', 'space-around', 'space-between'];
-const alignItems = ['center', 'flex-start', 'flex-end', 'stretch', 'baseline'];
+const Text = styled.p`
+    font-family: 'Open Sans', sans-serif;
+`
 
 const Button = styled.button`
     margin-top: 0.5rem;
@@ -53,13 +52,13 @@ const Button = styled.button`
         opacity: 0.7;
     }
 `
-const RoundImage = styled.img.attrs({
-    src: "/images/placeholder.png",
+const RoundImage = styled.img.attrs(props => ({
+    src: props.src || "/images/Textlaceholder.png",
     layout: 'fixed',
     width: 200,
     height: 200,
     alt: "Imagem"
-})`
+}))`
     border-radius: 50%;
 `
 
@@ -76,23 +75,24 @@ const BgImg = styled.div`
 
 const Info = styled.p`
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
 `
 
 function App() {
     return (
         <Fragment>
-            <BgImg src="/images/Img1.jpg" />
+            <BgImg src="/images/background_1.jpg" />
             <div className="container mx-auto">
                 <div className="row mb-5 pb-5">
                     <div className="col">
                         <Logo />
                     </div>
                     <div className="col-2">
-                        <p className="text-muted mt-2 mb-0">Telefone:</p>
-                        <p>(85) 9 9691-6621</p>
+                        <Text className="text-muted mt-2 mb-0">Telefone:</Text>
+                        <Text>(85) 9 9691-6621</Text>
                     </div>
                     <div className="col-2">
-                        <p className="text-muted mt-2 mb-0">Email:</p>
+                        <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
                             href="mailto:teste@teste.com"
                             target="_blank"
@@ -111,28 +111,28 @@ function App() {
                 <div className="row justify-content-end">
                     <div className="col">
                         <div className="card" style={{ width: "18rem" }}>
-                            <RoundImage className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
+                            <RoundImage src="/images/Img1.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
                                 <h5 className="card-title">Some title</h5>
-                                <p className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</p>
+                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="card" style={{ width: "18rem" }}>
-                            <RoundImage className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
+                            <RoundImage src="/images/Img2.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
                                 <h5 className="card-title">Some title</h5>
-                                <p className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</p>
+                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="card" style={{ width: "18rem" }}>
-                            <RoundImage className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
+                            <RoundImage src="/images/Img3.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
                                 <h5 className="card-title">Some title</h5>
-                                <p className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</p>
+                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,13 @@ function App() {
                         <div className="col">
                             <h1 className="display-2">Nossa História</h1>
                             <Info>
-                            Iniciando o ciclo profissional desde 1971 nas maiores empresas do seguimento de alimentos, especificamente em processamento na indústria de carnes de origem animal e seus derivados.  No passar desses 50 anos de análise e trabalho salta aos olhos a necessidades de atender cada cliente de forma diferenciada objetiva e principalmente econômica. Nesse sentido a Arcel , vem desenvolvendo desde 2006 , serviços de consultoria em projetos e instalações de máquinas e equipamentos , otimizando tempo e trabalhos dentro das industrias.</Info>
+                                Iniciando o ciclo profissional desde 1971 nas maiores empresas do seguimento de alimentos,
+                                especificamente em processamento na indústria de carnes de origem animal e seus derivados.
+                                No passar desses 50 anos de análise e trabalho salta aos olhos a necessidades de atender cada
+                                cliente de forma diferenciada objetiva e principalmente econômica. Nesse sentido a Arcel,
+                                vem desenvolvendo desde 2006 , serviços de consultoria em projetos e instalações de máquinas
+                                e equipamentos, otimizando tempo e trabalhos dentro das industrias.
+                            </Info>
                         </div>
                         <div className="col-5">
                             <Image src="/images/About.jpg" width="5797" height="3865" alt="Sobre nós imagem" />
@@ -153,16 +159,16 @@ function App() {
                 </div>
             </div>
             <div className="container">
-                <div className="row align-items-center">
+                <div className="row align-items-start">
                     <div className="col-5">
                         <Image src="/images/Logo_black.png" width="105" height="105" alt="Logo" />
                     </div>
                     <div className="col-2">
-                        <p className="text-muted mt-2 mb-0">Telefone:</p>
-                        <p>(85) 9 9691-6621</p>
+                        <Text className="text-muted mt-2 mb-0">Telefone:</Text>
+                        <Text>(85) 9 9691-6621</Text>
                     </div>
                     <div className="col-2">
-                        <p className="text-muted mt-2 mb-0">Email:</p>
+                        <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
                             href="mailto:teste@teste.com"
                             target="_blank"
@@ -173,8 +179,8 @@ function App() {
                         </a>
                     </div>
                     <div className="col">
-                        <p className="text-muted mt-2 mb-0">Endereço:</p>
-                        <p>60000-000 R. Café, Nº 257</p>
+                        <Text className="text-muted mt-2 mb-0">Endereço:</Text>
+                        <Text>CEP 60192-070 - Rua Andrade Furtado - Fortaleza, CE, Nº 47, Cocó</Text>
                     </div>
                 </div>
             </div>
