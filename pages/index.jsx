@@ -180,7 +180,7 @@ function App() {
                     </div>
                     <div className="col">
                         <Text className="text-muted mt-2 mb-0">Endereço:</Text>
-                        <Text>CEP 60192-070 - Rua Andrade Furtado - Fortaleza, CE, Nº 47, Cocó</Text>
+                        <Text>CEP 60192-070 - Rua Andrade Furtado - Fortaleza, CE, Nº 45, Cocó</Text>
                     </div>
                 </div>
             </div>
