@@ -28,6 +28,7 @@ const Col = styled.div`
 
 const Text = styled.p`
     font-family: 'Open Sans', sans-serif;
+    text-align: 'center';
 `
 
 const Button = styled.button`
@@ -91,7 +92,7 @@ function App() {
                         <Text className="text-muted mt-2 mb-0">Telefone:</Text>
                         <Text>(85) 9 9691-6621</Text>
                     </div>
-                    <div className="col-2">
+                    {/* <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
                             href="mailto:teste@teste.com"
@@ -101,7 +102,7 @@ function App() {
                         >
                             teste@teste.com
                         </a>
-                    </div>
+                    </div> */}
                     <div className="col">
                         <Button>
                             Solicite um orçamento
@@ -113,8 +114,7 @@ function App() {
                         <div className="card" style={{ width: "18rem" }}>
                             <RoundImage src="/images/Img1.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
-                                <h5 className="card-title">Some title</h5>
-                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
+                                <h5 style={{ textAlign: "center" }} className="card-title">PROCESSO DE COCÇÃO PARA PRODUTOS NÃO COMESTÍVEIS</h5>
                             </div>
                         </div>
                     </div>
@@ -122,8 +122,7 @@ function App() {
                         <div className="card" style={{ width: "18rem" }}>
                             <RoundImage src="/images/Img2.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
-                                <h5 className="card-title">Some title</h5>
-                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
+                                <h5 style={{ textAlign: "center" }} className="card-title">PROCESSAMENTO DE PESCADOS</h5>
                             </div>
                         </div>
                     </div>
@@ -131,8 +130,7 @@ function App() {
                         <div className="card" style={{ width: "18rem" }}>
                             <RoundImage src="/images/Img3.png" className="card-img-top" style={{ borderRadius: "50%", width: 200, marginLeft: 50 }} />
                             <div className="card-body">
-                                <h5 className="card-title">Some title</h5>
-                                <Text className="card-text">Et voluptatem ab velit quos est at facere. Harum in recusandae delectus. Eum quibusdam aut temporibus iusto. Sapiente animi voluptas id in. Dolore maiores veniam amet unde.</Text>
+                                <h5 style={{ textAlign: "center" }} className="card-title">TOLVA DE RECEPÇÃO</h5>
                             </div>
                         </div>
                     </div>
@@ -167,7 +165,7 @@ function App() {
                         <Text className="text-muted mt-2 mb-0">Telefone:</Text>
                         <Text>(85) 9 9691-6621</Text>
                     </div>
-                    <div className="col-2">
+                    {/* <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
                             href="mailto:teste@teste.com"
@@ -177,7 +175,7 @@ function App() {
                         >
                             teste@teste.com
                         </a>
-                    </div>
+                    </div> */}
                     <div className="col">
                         <Text className="text-muted mt-2 mb-0">Endereço:</Text>
                         <Text>CEP 60192-070 - Rua Andrade Furtado - Fortaleza, CE, Nº 45, Cocó</Text>
