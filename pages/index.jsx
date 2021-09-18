@@ -90,19 +90,19 @@ function App() {
                     </div>
                     <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Telefone:</Text>
-                        <Text>(85) 9 9691-6621</Text>
+                        <Text>(85) 9 8188-1411</Text>
                     </div>
-                    {/* <div className="col-2">
+                    <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
-                            href="mailto:teste@teste.com"
+                            href="mailto:arcel.ce@hotmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-decoration-none text-black"
                         >
-                            teste@teste.com
+                            arcel.ce@hotmail.com
                         </a>
-                    </div> */}
+                    </div>
                     <div className="col">
                         <Button>
                             Solicite um orçamento
@@ -163,19 +163,19 @@ function App() {
                     </div>
                     <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Telefone:</Text>
-                        <Text>(85) 9 9691-6621</Text>
+                        <Text>(85) 9 8188-1411</Text>
                     </div>
-                    {/* <div className="col-2">
+                    <div className="col-2">
                         <Text className="text-muted mt-2 mb-0">Email:</Text>
                         <a
-                            href="mailto:teste@teste.com"
+                            href="mailto:arcel.ce@hotmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-decoration-none text-black"
                         >
-                            teste@teste.com
+                            arcel.ce@hotmail.com
                         </a>
-                    </div> */}
+                    </div>
                     <div className="col">
                         <Text className="text-muted mt-2 mb-0">Endereço:</Text>
                         <Text>CEP 60192-070 - Rua Andrade Furtado - Fortaleza, CE, Nº 45, Cocó</Text>
